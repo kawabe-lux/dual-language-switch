@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<title>language switch</title>
-	<link rel="stylesheet" type="text/css" href="language_switch.css">
-	<script src="language_switch.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>language switch</title>
+  <link rel="stylesheet" type="text/css" href="language_switch.css">
+  <script src="language_switch.js"></script>
   <style>
     /* disable script-driven elements */
 
-		.js-only{
-			display: none;
-		}
+    .js-only{
+      display: none;
+    }
 
-		/* some styling */
+    /* some styling */
 
-		:root {
-			--text-color:black;
-			--border-color: var(--text-color);
-			--background-color: white;
-			--button-border-width: 0.15rem;
-			--focus-color: red;
-			--focus-box-shadow: 2px 2px var(--focus-color);
-			--text-font: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		}
+    :root {
+      --text-color:black;
+      --border-color: var(--text-color);
+      --background-color: white;
+      --button-border-width: 0.15rem;
+      --focus-color: red;
+      --focus-box-shadow: 2px 2px var(--focus-color);
+      --text-font: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
 
-		:root{
-			font-family: var(--text-font);
-		}
+    :root{
+      font-family: var(--text-font);
+    }
 
-		body{
-			max-width: 40em;
-			margin: 0 auto;
-		}
+    body{
+      max-width: 40em;
+      margin: 0 auto;
+    }
 
-		header, main{
-			margin: 1em;
-		}
+    header, main{
+      margin: 1em;
+    }
 
-		:focus{
-			outline-style: solid;
-			outline-color: var(--focus-color);
-			outline-width: 0.2rem;
-		}
+    :focus{
+      outline-style: solid;
+      outline-color: var(--focus-color);
+      outline-width: 0.2rem;
+    }
 
   </style>
 </head>
 <body>
-	<script>
-		(function(){  
-			// enables JavaScript-only elements
-			const style = document.createElement("style");
-			style.innerHTML = ".js-only{display:unset}";
-			document.head.appendChild(style);
+  <script>
+    (function(){  
+      // enables JavaScript-only elements
+      const style = document.createElement("style");
+      style.innerHTML = ".js-only{display:unset}";
+      document.head.appendChild(style);
 
-			const jsOnly = document.getElementsByClassName("js-only");
-			for (var i = jsOnly.length - 1; i >= 0; i--) {
-				jsOnly[i].removeAttribute("hidden");
-			}
-		})()
-	</script>
+      const jsOnly = document.getElementsByClassName("js-only");
+      for (var i = jsOnly.length - 1; i >= 0; i--) {
+        jsOnly[i].removeAttribute("hidden");
+      }
+    })()
+  </script>
   <header>
     <!-- language switch start -->
     <div class="js-only">
