@@ -62,15 +62,17 @@
   </script>
   <header>
     <!-- language switch start -->
-    <div class="js-only">
-      <div id="language-label">
+    <div class="js-only switch-container">
+      <span id="language-label">
         <span class="EN unset">language</span>
         <span class="DE unset">Sprache</span>
+      </span>
+      <div id="language-switch" class="switch" aria-labelledby="language-label">
+        <input type="radio" name="language" id="language-EN" value="en" checked>
+        <label for="language-EN">EN</label>
+        <input type="radio" name="language" id="language-DE" value="de">
+        <label for="language-DE">DE</label>
       </div>
-      <button id="language-button" role="switch" aria-checked="true" aria-labelledby="language-label">
-        <span>EN</span>
-        <span>DE</span>
-      </button>
     </div>
     <!-- language switch end -->
   </header>
