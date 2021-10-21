@@ -1,8 +1,6 @@
 (function(){  
   let languageStored
   const root = document.documentElement;
-  const LANG_CODES = ["en", "de"];
-  const LANG_INDEXES = {"en": 0, "de": 1};
   // is called before DOM is loaded
   function init() {
     languageStored = sessionStorage.getItem('language');
@@ -46,11 +44,11 @@
     switchEl.radios = {};
     for (var i = radios.length - 1; i >= 0; i--) {
       // set radio relationship
-      if (radios[i].checked == true) {
+      if (radios[i].checked === true) {
         switchEl.radioChecked = radios[i];
       }
       radios[i].switch = switchEl;
-      if (i == radios.length - 1) {
+      if (i === radios.length - 1) {
         radios[i].nextRadio = radios[0];
       }
       else {

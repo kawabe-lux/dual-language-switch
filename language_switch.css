@@ -16,8 +16,14 @@
   display: none;
 }
 
-/* switch */
+.visually-hidden{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
 
+
+/* switch */
 
 .switch-container>span{
   display: block;
@@ -45,7 +51,9 @@
   left: -9999px;
 }
 
+
 /* active */
+
 .switch-container>div>input[type="radio"]:checked+label {
   color: var(--background-color);
   background-color: var(--text-color);

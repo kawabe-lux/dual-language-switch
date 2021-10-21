@@ -67,11 +67,19 @@
         <span class="EN unset">language</span>
         <span class="DE unset">Sprache</span>
       </span>
-      <div id="language-switch" class="switch" aria-labelledby="language-label">
+      <div role="radiogroup" id="language-switch" class="switch" aria-labelledby="language-label">
         <input type="radio" name="language" id="language-EN" value="en" checked>
-        <label for="language-EN">EN</label>
+        <label for="language-EN">
+          <span aria-hidden="true">EN</span>
+          <span class="visually-hidden EN unset">English</span>
+          <span class="visually-hidden DE unset">Englisch</span>
+        </label>
         <input type="radio" name="language" id="language-DE" value="de">
-        <label for="language-DE">DE</label>
+        <label for="language-DE">
+          <span aria-hidden="true">DE</span>
+          <span class="visually-hidden EN unset">German</span>
+          <span class="visually-hidden DE unset">Deutsch</span>
+        </label>
       </div>
     </div>
     <!-- language switch end -->
