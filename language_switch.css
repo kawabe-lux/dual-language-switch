@@ -16,12 +16,6 @@
   display: none;
 }
 
-.visually-hidden{
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
 
 /* switch */
 
@@ -41,7 +35,7 @@
 }
 
 .switch-container>div>label{
-  padding: 0.5em;
+  padding: 0.4em;
   display: inline-block;
 }
 
